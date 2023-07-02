@@ -69,7 +69,13 @@ nav{
     width: 16px;
     fill:crimson;
     margin-right: 5px;
-    margin-top: 16px;
+    margin-top: 6px;
+}
+
+.rating-box{
+    display: flex;
+    margin-top: -15px;
+
 }
 
 .rating-info{
@@ -79,7 +85,9 @@ margin-left: 5px;
 
 .rating{
     display: flex;
-    height: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .flex{
