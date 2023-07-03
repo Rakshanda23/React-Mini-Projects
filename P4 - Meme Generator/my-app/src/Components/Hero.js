@@ -4,11 +4,18 @@ import MemeData from "../MemeData"
 
 export default function Hero(){
     let url
+
+    const [memeImage,setMemeImage] = React.useState(" ")
+
+    // function setMemeImage(){
+    //     setMemeImage(url)
+    // }
     
     function getMemeImage(){
         const memeArray = MemeData.data.memes
         const randomNumber = Math.floor(Math.random() * memeArray.length) 
-        url = memeArray[randomNumber].url;
+        // url = memeArray[randomNumber].url;
+        setMemeImage(memeArray[randomNumber].url)
     }
 
     return(
@@ -22,7 +29,7 @@ export default function Hero(){
                  Get New Meme Image
             </button>
             <div className="section-3">
-                <img className="imgg" src={url}></img>
+                <img className="imgg" src={memeImage}></img>
             </div>
         </main>
     )
