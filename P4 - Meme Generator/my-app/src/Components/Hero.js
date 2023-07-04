@@ -5,18 +5,13 @@ import MemeData from "../MemeData"
 export default function Hero(){
     let url
 
-    const [memeImage,setMemeImage] = React.useState(" ")
+    const [memeImage,setMemeImage] = React.useState(" ")    
 
-    // function setMemeImage(){
-    //     setMemeImage(url)
-    // }
-    
-    function getMemeImage(){
-        const memeArray = MemeData.data.memes
-        const randomNumber = Math.floor(Math.random() * memeArray.length) 
-        // url = memeArray[randomNumber].url;
-        setMemeImage(memeArray[randomNumber].url)
+    function getMemeImage(){       
+                 const randomNumber = Math.floor(Math.random() * MemeData.data.memes.length)                
+                setMemeImage(MemeData.data.memes[randomNumber].url)
     }
+
 
     return(
         <main>
@@ -34,3 +29,14 @@ export default function Hero(){
         </main>
     )
 }
+
+
+
+
+
+    // function getMemeImage(){
+    //     const memeArray = MemeData.data.memes
+    //     const randomNumber = Math.floor(Math.random() * memeArray.length) 
+    //     // url = memeArray[randomNumber].url;
+    //     setMemeImage(memeArray[randomNumber].url)
+    // }
