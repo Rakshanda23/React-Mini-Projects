@@ -3,13 +3,12 @@ import ReactDOM from "react-dom"
 import MemeData from "../MemeData"
 
 export default function Hero(){
-    let url
 
-    const [memeImage,setMemeImage] = React.useState(" ")    
+    const [memeImage, setMemeImage] = React.useState()
 
-    function getMemeImage(){       
-                 const randomNumber = Math.floor(Math.random() * MemeData.data.memes.length)                
-                setMemeImage(MemeData.data.memes[randomNumber].url)
+    function getMemeImage(){
+        const randomNo = Math.floor(Math.random() * MemeData.data.memes.length)
+        setMemeImage(MemeData.data.memes[randomNo].url)
     }
 
 
@@ -32,6 +31,14 @@ export default function Hero(){
 
 
 
+
+
+// const [memeImage,setMemeImage] = React.useState(" ")    
+
+// function getMemeImage(){       
+//              const randomNumber = Math.floor(Math.random() * MemeData.data.memes.length)                
+//             setMemeImage(MemeData.data.memes[randomNumber].url)
+// }
 
 
     // function getMemeImage(){
