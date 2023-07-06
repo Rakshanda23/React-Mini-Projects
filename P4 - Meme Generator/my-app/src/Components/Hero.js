@@ -4,11 +4,25 @@ import MemeData from "../MemeData"
 
 export default function Hero(){
 
-    const [memeImage, setMemeImage] = React.useState()
+    const [memeImage, setMemeImage] = React.useState({
+        topText : "",
+        bottomText : "",
+        url: "https://i.imgflip.com/1ur9b0.jpg"
+
+    })
+
+    const [allMemeImages, setAllMemeImages] = React.useState(MemeData)
 
     function getMemeImage(){
-        const randomNo = Math.floor(Math.random() * MemeData.data.memes.length)
-        setMemeImage(MemeData.data.memes[randomNo].url)
+        const memearray = allMemeImages.data.memes
+        const randomNo = Math.floor(Math.random() * memearray.length)
+        const url = memearray[randomNo].url
+        setMemeImage(prev => {
+            return{
+                ...prev,
+                url : url
+            }
+        })
     }
 
 
@@ -23,7 +37,7 @@ export default function Hero(){
                  Get New Meme Image
             </button>
             <div className="section-3">
-                <img className="imgg" src={memeImage}></img>
+                <img className="imgg" src={memeImage.url}></img>
             </div>
         </main>
     )
