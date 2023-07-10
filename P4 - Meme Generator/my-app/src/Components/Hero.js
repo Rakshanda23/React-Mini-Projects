@@ -25,11 +25,25 @@ export default function Hero(){
         })
     }
 
+    const [tText,setTopText] = React.useState("")
+
+    function handleTopText(e){
+        setTopText(e.target.value)
+        setMemeImage(prev => {
+            return{
+                ...prev,
+                topText : tText
+            }
+        })
+    }
+
 
     return(
         <main>
             <div className="section-1">
-                <input type="text" placeholder="Top Text" className="input top-text"/>
+                <input type="text" placeholder="Top Text" value={tText} onChange={function(e){
+                    handleTopText(e);
+                }} className="input top-text"/>
                 <input type="text"  placeholder="Bottom Text" className="input bottom-text"/>
             </div>
             
@@ -37,11 +51,13 @@ export default function Hero(){
                  Get New Meme Image
             </button>
             <div className="section-3">
+                <h1>{memeImage.topText}</h1>
                 <img className="imgg" src={memeImage.url}></img>
             </div>
         </main>
     )
 }
+
 
 
 
