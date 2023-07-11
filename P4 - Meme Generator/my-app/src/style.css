@@ -76,3 +76,25 @@ main{
     height: 100%;
     border-radius: 10px;
 }
+
+.text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* background-color: #af9bff; */
+    width: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bolder;
+    -webkit-text-stroke: #c2b4fa 1px;
+}
+
+.top-text{
+    
+    margin-top: 10px;
+}
+
+.bottom-text{
+
+    margin-top: -70px;
+}
