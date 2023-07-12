@@ -6,7 +6,7 @@ import Carddata from "./Carddata.js"
 
 
 export default function App(){
-
+  
   const CardComponent = Carddata.map( item => {
       return(
         <Card

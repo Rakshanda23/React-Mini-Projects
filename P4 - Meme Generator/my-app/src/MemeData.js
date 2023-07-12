@@ -45,7 +45,7 @@ export default {
             {
                 "id": "129242436",
                 "name": "Change My Mind",
-                "url": "https://i.imgflip.com/24y43o.jpg",
+                "url": " ",
                 "width": 482,
                 "height": 361,
                 "box_count": 2

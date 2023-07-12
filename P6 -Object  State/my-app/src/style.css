@@ -1,0 +1,57 @@
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    justify-content: center ;
+    align-items: center;
+    gap: 3rem;
+}
+
+button{
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    height: 370px;
+    width: 250px;
+    border: solid 2px ;
+    border-radius: 10PX;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.image{
+    margin-top: 20px;
+    height: 170px;
+    width: 170px;
+    border-radius: 70%;
+}
+
+.title{
+    font-size: 23px;
+    font-weight:550;
+}
+
+.desc{
+    width: 100%;
+    /* background-color: aqua; */
+    font-size: 17px;
+}
