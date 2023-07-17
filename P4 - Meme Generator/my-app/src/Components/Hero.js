@@ -90,3 +90,4 @@ export default function Hero(){
     //     // url = memeArray[randomNumber].url;
     //     setMemeImage(memeArray[randomNumber].url)
     // }
+//ejfuhu
